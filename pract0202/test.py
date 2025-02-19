@@ -8,8 +8,15 @@ class TestRobot:
         robot = Robot(0, 0)
         robot.move("NNNSSSW")
         assert robot.path() == [
-            (0, 1), (0, 2), (0, 3), (0, 2), (0, 1), (0, 0), (-1, 0)
-            ]
+            (0, 0),
+            (0, 1),
+            (0, 2),
+            (0, 3),
+            (0, 2),
+            (0, 1),
+            (0, 0),
+            (-1, 0),
+        ]
 
     def test_move_with_invalid_input(self):
         robot = Robot(0, 0)
